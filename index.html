@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="coursera">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <script src="/script/angular.js"></script>
+    <script src="app.js"></script>
 </head>
-<body>
-    <h1>Hello coursera!!! I am thrilled to be here !!!!</h1>
+<body ng-controller="flipImageCtr">
+    <h1>Hello coursera! I am thrilled to be here !!</h1>
+
+    <input type="button" value="map"ng-click="state()">
+    <br/><br/>
+    <img ng-src="/Images/{{stateo}}.png" alt="map">
 </body>
 </html>
